@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="p5logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="spotifyclone.css">
+    <title>Spotify Clone</title>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="p5logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Best of NCS-No Copyright Sounds</h1>
+        <div class="songList">
+            <div class="songItem">
+                <img src="1.jpg" alt="song">
+                <span class="songname">Aasha Paasham - C/O KC</span>
+                <span class="songPlay"><span>05:34</span><i id="1" class="songplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="1.jpg" alt="song">
+                <span class="songname">Dheera Dheera -KGF</span>
+                <span class="songPlay"><span>03:23</span><i id="2" class="songplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="1.jpg" alt="song">
+                <span class="songname">Psycho Saiyaan - Saaho</span>
+                <span class="songPlay"><span>05:28</span><i id="3" class="songplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="1.jpg" alt="song">
+                <span class="songname">NCS-BGM</span>
+                <span class="songPlay"><span>04:21</span><i id="4" class="songplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="1.jpg" alt="song">
+                <span class="songname">NCS-BGM</span>
+                <span class="songPlay"><span>04:21</span><i id="5" class="songplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songItem">
+                <img src="1.jpg" alt="song">
+                <span class="songname">NCS-BGM</span>
+                <span class="songPlay"><span>04:21</span><i id="6" class="songplay fa-solid fa-circle-play"></i></span>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" id="progressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-2x fa-backward-fast" id="prev"></i>
+            <i class="fa-solid fa-2x fa-circle-play" id="masterplay"></i>
+            <i class="fa-solid fa-2x fa-forward-fast" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="equalizergif.gif" width="42px" alt="playing" id="equalizer"> 
+            <span id="mastersongname">Aasha
+                Paasham - C/O KC</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/aa0fa64845.js" crossorigin="anonymous"></script>
+    <script src="spotifyclone.js"></script>
+</body>
+
+</html>

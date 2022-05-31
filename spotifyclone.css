@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 65px;
+    background: black;
+    color: white;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 0 13px;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.container{
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 15px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background: url('p5back.webp') no-repeat center center/cover;
+    flex-direction: column;
+}
+.bottom{
+    position: sticky;
+    background-color: black;
+    color: white;
+    height: 80px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin: 10px;
+}
+.icons i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+#progressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItem{
+    display: flex;
+    height: 50px;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    margin-top: 23px;
+    border-radius: 23px;
+}
+.songItem span{
+    padding: 0 12px;
+}
+.songItem img{
+    width: 50px;
+    height: 50px;
+    margin: 0 23px;
+    border-radius: 50%;
+}
+span i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songList{
+    margin-top: 40px;
+}
+#equalizer{
+    margin-right: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+@media only screen and (max-width:430px) {
+    .songItem{
+        height: 100px;
+        width: 80%;
+        flex-direction: column;
+        padding: 8px;
+    }
+    .songname{
+        font-size: 15px;
+    }
+     #mastersongname{
+        font-size: 15px;
+    }
+    .bottom{
+        height: 120px;
+    }
+    .songInfo{
+        top: 25vw;
+        left:18vw;
+    }
+    
+}
