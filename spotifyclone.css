@@ -118,7 +118,8 @@ span i{
         font-size: 15px;
     }
     .bottom{
-        height: 120px;
+        height: 130px;
+        margin-bottom: 23px;
     }
     .songInfo{
         top: 25vw;
